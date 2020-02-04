@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/ubuntu/Playbooks":{"guestpath":"/home/ubuntu/Playbooks","hostpath":"C:/Users/Jackf/Sparta_work/Kubernetes/Playbooks","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/Jackf/Sparta_work/Kubernetes","disabled":false,"__vagrantfile":true}}}
