@@ -78,3 +78,15 @@ see status of rollout for new image
 
 - kubectl rollout undo deployments/kubernetes-bootcamp
 undo a rollout in case there was an issue
+
+
+Running the Sparta Global app:
+the docker image used for this is found at https://hub.docker.com/repository/docker/jfarmer865/sparta_app
+the manifest files to create the deployments and services are in the Playbooks folder
+when the vagrant machines are running:
+- type 'kubectl create -f /home/ubuntu/Playbooks/sparta_service.yaml' to launch the service
+- check the service with 'kubectl get service' and take note of the node port (should be between 30000 and 32767)
+- type 'kubectl create -f /home/ubuntu/Playbooks/sparta_app.yaml' to deploy the app
+- check with 'kubectl get pods' to check when they are Running
+- go into a browser (chrome preferred) and type 192.168.10.105:<node port found earlier>
+to view the app
